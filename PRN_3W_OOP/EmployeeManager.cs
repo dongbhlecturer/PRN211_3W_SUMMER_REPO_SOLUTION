@@ -6,7 +6,7 @@ public class EmployeeManager
 {
     //1. properties
     const int NumberOfEmp = 10;
-    private Employee[] _employees;
+    private Employee[] _employees; //array static
     private int _count; //dem so luong co that trong array
 
     public EmployeeManager()
