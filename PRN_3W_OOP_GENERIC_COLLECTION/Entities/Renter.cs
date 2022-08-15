@@ -14,6 +14,9 @@ internal class Renter : Person
     {
         return NetSalary + AddSalary;
     }
+
+  
+
     public override void DisplayInfo()
     {
         base.DisplayInfo();

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PRN_3W_OOP_PRACTICE.OOP.GenericCollection;
 
 internal class Employee : Person
-{
+{   
     public int Manday { get; set; }
     public double BaseSalary { get; set; }
 
@@ -15,6 +15,9 @@ internal class Employee : Person
     {
         return Manday * BaseSalary;
     }
+
+ 
+
     public override void DisplayInfo()
     {
         base.DisplayInfo();

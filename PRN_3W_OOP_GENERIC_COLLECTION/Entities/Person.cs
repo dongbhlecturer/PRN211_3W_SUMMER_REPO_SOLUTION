@@ -27,4 +27,5 @@ public abstract class Person
     //Method voi virtual keyword: lop con thich thi thay doi
     public virtual void DisplayInfo() => WriteLine($"ID: {Id}, Name: {Name}, Address: {Address}");
 
+    
 }
