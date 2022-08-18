@@ -1,5 +1,5 @@
 ﻿namespace WinFormsApp;
-
+using DataAccess.Entities;
 partial class frmEmployeeManager
 {
 
@@ -162,19 +162,16 @@ partial class frmEmployeeManager
             // 
             // cboType
             // 
+            this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.FormattingEnabled = true;
-            this.cboType.Items.AddRange(new object[] {
-            "Fresher",
-            "Developer",
-            "Senior",
-            "Major",
-            "Project Manager"});
+            this.cboType.Items.AddRange(TypeEmployee.Types);
             this.cboType.Location = new System.Drawing.Point(287, 430);
             this.cboType.Name = "cboType";
             this.cboType.Size = new System.Drawing.Size(379, 40);
             this.cboType.TabIndex = 6;
             this.cboType.SelectedIndexChanged += new System.EventHandler(this.cboType_SelectedIndexChanged);
-            // 
+        this.cboType.SelectedIndex = 0;    
+        // 
             // mskPhone
             // 
             this.mskPhone.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -275,5 +272,5 @@ partial class frmEmployeeManager
     private Button btnUpdate;
     private Button btnAdd;
     private DataGridView dgvEmployees;
-    protected ComboBox cboType;
+    private ComboBox cboType;
 }
