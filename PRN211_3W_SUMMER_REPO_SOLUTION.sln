@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PRN_3W_OOP_GENERIC_COLLECTI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{7A412CE8-6987-46F6-ACE9-9F7037B76D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{44579DBF-AAF6-44AC-AFAF-7D487161C81B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{44579DBF-AAF6-44AC-AFAF-7D487161C81B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileLibrary", "AutomobileLibrary\AutomobileLibrary.csproj", "{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileWinFormsApp", "AutomobileWinFormsApp\AutomobileWinFormsApp.csproj", "{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{44579DBF-AAF6-44AC-AFAF-7D487161C81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44579DBF-AAF6-44AC-AFAF-7D487161C81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44579DBF-AAF6-44AC-AFAF-7D487161C81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
