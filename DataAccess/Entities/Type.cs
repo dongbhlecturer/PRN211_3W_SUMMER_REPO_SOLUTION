@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities;
 
-public static class Type
+public enum TypeEmployee
 {
-    public static string[] Types = new string[]
-    {
-            "Fresher",
-            "Developer",
-            "Senior",
-            "Major",
-            "Project Manager"
-    };
+     Fresher,
+     Developer,
+     Senior,
+     Major,
+     ProjectManager
 }

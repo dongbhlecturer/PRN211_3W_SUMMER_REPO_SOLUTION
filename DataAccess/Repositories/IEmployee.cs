@@ -9,4 +9,5 @@ namespace DataAccess.Repositories;
 public interface IEmployee
 {
     void Add(Employee e);
+    List<Employee> GetAll();
 }

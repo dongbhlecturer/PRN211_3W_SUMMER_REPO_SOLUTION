@@ -41,6 +41,18 @@ public partial class frmEmployeeManager : Form
 
         /*3. gọi tới lớp EmployeeManager bên DataAccess assembly*/
         employeeManager.AddEmployee(emp);
+        List<Employee> emps = employeeManager.GetAllEmployee();
+        this.dgvEmployees.DataSource = null;
+        this.dgvEmployees.DataSource = emps;
+
         MessageBox.Show("Employee has been added...");
     }
+
+    private void frmEmployeeManager_Load(object sender, EventArgs e)
+    {
+        //default data for dgv
+        List<Employee> employees = employeeManager.GetAllEmployee();
+        this.dgvEmployees.DataSource = employees;
+    }
+    /**/
 }

@@ -15,7 +15,6 @@ partial class frmEmployeeManager
     private RadioButton radioButton2;
     private RadioButton radMale;
     private Label label5;
-    private ComboBox cboType;
 
     /// <summary>
     ///  Clean up any resources being used.
@@ -183,7 +182,7 @@ partial class frmEmployeeManager
             this.mskPhone.Mask = "000-0000000";
             this.mskPhone.Name = "mskPhone";
             this.mskPhone.Size = new System.Drawing.Size(378, 43);
-            this.mskPhone.TabIndex = 9;
+            this.mskPhone.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -201,7 +200,7 @@ partial class frmEmployeeManager
             this.btnClose.Location = new System.Drawing.Point(434, 38);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(150, 54);
-            this.btnClose.TabIndex = 2;
+            this.btnClose.TabIndex = 9;
             this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -211,7 +210,7 @@ partial class frmEmployeeManager
             this.btnUpdate.Location = new System.Drawing.Point(244, 38);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 54);
-            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
@@ -220,7 +219,7 @@ partial class frmEmployeeManager
             this.btnAdd.Location = new System.Drawing.Point(52, 38);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(150, 54);
-            this.btnAdd.TabIndex = 0;
+            this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -232,14 +231,14 @@ partial class frmEmployeeManager
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.RowHeadersWidth = 82;
             this.dgvEmployees.RowTemplate.Height = 41;
-            this.dgvEmployees.Size = new System.Drawing.Size(981, 555);
+            this.dgvEmployees.Size = new System.Drawing.Size(1149, 555);
             this.dgvEmployees.TabIndex = 11;
             // 
             // frmEmployeeManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1758, 677);
+            this.ClientSize = new System.Drawing.Size(1923, 677);
             this.Controls.Add(this.dgvEmployees);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mskPhone);
@@ -256,6 +255,7 @@ partial class frmEmployeeManager
             this.Name = "frmEmployeeManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees Management";
+            this.Load += new System.EventHandler(this.frmEmployeeManager_Load);
             this.grpGender.ResumeLayout(false);
             this.grpGender.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -275,4 +275,5 @@ partial class frmEmployeeManager
     private Button btnUpdate;
     private Button btnAdd;
     private DataGridView dgvEmployees;
+    protected ComboBox cboType;
 }

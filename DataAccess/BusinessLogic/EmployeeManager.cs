@@ -19,4 +19,8 @@ public class EmployeeManager
     {
         this._employee.Add(e);
     }
+    public List<Employee> GetAllEmployee()
+    {
+        return this._employee.GetAll(); 
+    }
 }
