@@ -23,6 +23,16 @@ public class CarDBContext
         new Car{CarID =3, CarName="MES",Manufacturer="Honda",Price=50_000,
             ReleaseYear=2022},
     };
+    private static string[] _manufacturers = new string[]
+    {
+        "Audi",
+        "Honda",
+        "BMW",
+        "Suzuki",
+        "Kia",
+        "Toyota",
+        "Ford"
+    };
     /*Create singleton design parttern*/
     private static CarDBContext _instance = null;
     private static readonly object _instanceLock = new object();
@@ -43,6 +53,7 @@ public class CarDBContext
         }
     }
     public List<Car> GetCarList => _carList; //bodies-expression
+    public string[] Manufacturers => _manufacturers;
     /*Lay ra 1 Car dua tren CarId*/
     public Car? GetCarById(int CarId) => _carList.SingleOrDefault(c=>c.CarID == CarId);
     public void AddNew(Car c)
