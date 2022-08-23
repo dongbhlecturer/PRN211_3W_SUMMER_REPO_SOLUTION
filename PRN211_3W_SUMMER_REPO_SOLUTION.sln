@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp", "WinFormsApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{44579DBF-AAF6-44AC-AFAF-7D487161C81B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileLibrary", "AutomobileLibrary\AutomobileLibrary.csproj", "{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomobileLibrary", "AutomobileLibrary\AutomobileLibrary.csproj", "{DF1406F2-5FA0-49FC-8C5A-6F8928E214F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomobileWinFormsApp", "AutomobileWinFormsApp\AutomobileWinFormsApp.csproj", "{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomobileWinFormsApp", "AutomobileWinFormsApp\AutomobileWinFormsApp.csproj", "{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContextEFCLibrary", "DataContextEFCLibrary\DataContextEFCLibrary.csproj", "{51142073-0AF2-45AB-9C41-F030DD87DF37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8487A3C-F72E-4AA2-AE7E-7F6888690B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51142073-0AF2-45AB-9C41-F030DD87DF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51142073-0AF2-45AB-9C41-F030DD87DF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51142073-0AF2-45AB-9C41-F030DD87DF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51142073-0AF2-45AB-9C41-F030DD87DF37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

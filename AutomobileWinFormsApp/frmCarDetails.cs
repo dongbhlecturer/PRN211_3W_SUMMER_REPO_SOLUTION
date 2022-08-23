@@ -30,6 +30,16 @@ namespace AutomobileWinFormsApp
             InitializeComponent();
 
         }
+        public frmCarDetails(ICarRepository carRepository, bool insertOrUpdate, Car c)
+
+        {
+           
+            CarRepository = carRepository;
+            InsertOrUpdate = insertOrUpdate;
+            CarInfo = c;
+            InitializeComponent();
+
+        }
 
         private void btnCancel_Click(object sender, EventArgs e) => this.Close();
 

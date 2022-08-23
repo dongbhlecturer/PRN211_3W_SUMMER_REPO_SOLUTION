@@ -50,6 +50,8 @@
             this.dgvCarList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCarList.Size = new System.Drawing.Size(1478, 497);
             this.dgvCarList.TabIndex = 0;
+            this.dgvCarList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarList_CellContentClick);
+            this.dgvCarList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarList_CellDoubleClick);
             // 
             // groupBox1
             // 

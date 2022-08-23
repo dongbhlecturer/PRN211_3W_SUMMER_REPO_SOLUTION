@@ -53,8 +53,8 @@ namespace AutomobileWinFormsApp
         {
             this.Close();
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
+        
+        public void btnSave_Click(object sender, EventArgs e)
         {
             //Thuc thi viec validation va add to database
             //1. Hien thi form frmDetail de thuc hien them moi
@@ -67,6 +67,34 @@ namespace AutomobileWinFormsApp
                 this._bindingSource.Position = this._bindingSource.Count - 1;
             }
             
+        }
+
+        private void dgvCarList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //1. Lay 1 dòng trong datagridview
+            int rowIndex = e.RowIndex;
+            DataGridViewRow row = dgvCarList.Rows[rowIndex];
+            //2. convert a row to object Car
+            //Object inialize
+            var c = new Car
+            {
+                CarID = int.Parse(row.Cells[0].Value.ToString()),
+                CarName = row.Cells[1].Value.ToString(),
+                Manufacturer = row.Cells[2].Value.ToString(),
+                Price = decimal.Parse(row.Cells[3].Value.ToString()),
+                ReleaseYear = int.Parse(row.Cells[4].Value.ToString())
+
+            };
+            //3. khoi tao doi tuong CarDetail thong qua constructor
+
+
+            frmCarDetails frmCar = new frmCarDetails(_carRepository,true,c);
+            frmCar.Show();
+        }
+
+        private void dgvCarList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
